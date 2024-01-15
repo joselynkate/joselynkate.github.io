@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+section
+{
+    padding: 150px;
+
+}
+.hidden {
+  display: none;
+}
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(https://i.imgur.com/GCBwqM9.png);
+    background-size: cover;
+    background-position: 75% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2
+{
+    font-size: 2.5em;
+    color: #fff;
+    font-wight:500;
+    line-height: 2.2em;
+
+
+}
+.banner h2 span
+{
+    font-size: 2.7em;
+    font-weight: 500;
+    
+
+}
+.banner h3
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.btn
+{
+    position: relative;
+    background: #54536A;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+	transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+  	background-color: black;
+	color: white;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 40px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    
+}
+header .logo
+{
+/*
+    position: fixed;
+    padding: 200px;
+*/
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+header.sticky .logo
+{
+    color: #54536A;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+
+{
+    position: relative;
+    display: flex;
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+/*
+section
+{
+    background: #fff;
+}
+*/
+header.sticky ul li a
+{
+    color: #111;
+}
+/*
+  Our fashion
+*/
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.about .heading
+{
+    color: #111;
+	padding-top: -20px; /* Adjust the padding as needed */
+}
+/*
+  About me picture
+*/
+img {
+    
+    width: 1500px;
+    height: auto;
+}
+.heading h2
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.contentBx h3
+{
+/*
+    text-align: center;
+*/
+   font-style: 24px;
+    margin-bottom: 10px;
+}
+.makeup .heading
+{
+    color: #111;
+}
+.w50
+{
+	max-width: 80%;
+	max-height: 80%;
+	padding-left: 10%;
+}
+
+.contentBx
+{
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.film
+{
+    background: #111;
+    text-align: center;
+    font-weight: 400;
+    font-style: 24px;
+    margin-bottom: 10px;
+}
+.fashion
+{
+    background: #111;
+    text-align: center;
+    font-weight: 400;
+    font-style: 24px;
+    margin-bottom: 10px;
+}
+
+.fashion p {
+	color: #fff;
+	padding-bottom: 40px;
+}
+.heading .white
+{
+    color: #fff;
+}
+.fashion .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.fashion .content .fashionBx
+{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 320px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.fashion .content .fashionBx:hover
+{
+/*
+  background: #2196f3;
+*/
+    background: #54536A;
+}
+.fashion .content .fashionBx img
+{
+    
+}
+.fashion .content .fashionBx h2
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.makeup h1 {
+	padding: 100px;
+	color: black;
+}
+
+.makeup .content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.makeup .content .makeupBx
+{
+    width: 80%;
+    padding: 20px;
+}
+.makeup .content h1
+{
+    width: 80%;
+    padding: 20px;
+	color: white;
+}
+.makeup .content .makeupBx img
+{
+    max-width: 100%;
+	padding: 30px;
+}
+.music
+{
+    background: #f7f7f7;
+}
+.music .heading
+{
+    color: #111;
+}
+.music .content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.music .content .musicBx
+{
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #54536A;
+}
+.music .content .musicBx p
+{
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+.music .content .musicBx h3
+{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+.music .content .musicBx h3 span
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact
+{
+    background: #111;
+    color: #fff;
+}
+.formBx
+{
+    min-width: 60%;
+}
+.formBx form
+{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.formBx form textarea
+{
+    min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+    color: #999999;
+}
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #54536A; 
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;   
+}
+.contactInfo
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contactInfoBx
+{
+    display: flex;
+	justify-content: center;
+
+}
+.contactInfoBx .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon
+{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contactInfoBx .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBx .box .text h3
+{
+    font-weight: 500;
+    color: #51546A;
+    margin-bottom: 0;
+}
+.copyright
+{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Cool Stuff*/
+@media (max-width: 900px)
+{
+    header,
+    header.sticky
+    {
+	background: #54536A;
+	padding: 20px 50px;
+	z-index: 1000;
+    }
+    header.sticky
+    {
+	background: #fff;
+    }
+    .menu
+    {
+	position: fixed;
+	top: 75px;
+	left: -100%;
+	display: block;
+	padding: 100px 50px;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	transition: 0.5s;
+	z-index: 999;
+	border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active
+    {
+	left: 0;
+    }
+    header ul li a
+    {
+	color: #111;
+	font-size: 24px;
+	margin: 10px;
+    }
+    .toggle
+    {
+	width: 40px;
+	height: 40px;
+	background: url(https://cdn0.iconfinder.com/data/icons/heroicons-ui/24/icon-menu-512.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	filter: invert(1);
+	cursor: pointer;
+    }
+    .toggle.active
+    {
+	background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	filter: invert(1);
+	cursor: pointer;	
+    }
+    header.sticky .toggle
+    {
+	filter: invert(0);
+    }
+    section
+    {
+	padding: 100% 10px;
+    }
+    .banner
+    {
+	padding: 150px 50px 100px;
+    }
+    .banner h2
+    {
+	font-size: 1.5em;
+    }
+    .banner h3
+    {
+	font-size: 1em;
+    }
+    .btn
+    {
+	margin-top: 10px;
+	padding: 10px 20px;
+	font-size: 16px;
+    }
+    .heading h2
+    {
+	font-size: 24px;
+    }
+    .content
+    {
+	flex-direction: column;
+    }
+    .fashion .content .fashionBx
+    {
+	margin: 10px;
+    }
+    .makeup .content .makeupBx
+    {
+	width: 100%;
+	padding: 10px;
+    }
+    .music .content .musicBx
+    {
+	max-width: calc(100% - 20px);
+	padding: 40px 20px;
+	margin: 10px;
+	background: #54536A;
+    }
+    .music .content .musicBx h3
+    {
+	margin-top: 20px;
+    }
+    .contactInfo
+    {
+	margin: 20px 0;
+    }
+}
+
+@media (max-width: 899px)
+{
+    header,
+    header.sticky
+    {
+	padding: 20px 20px;
+    }
+    .banner
+    {
+	padding: 150px 20px 100px;
+    }
+    section
+    {
+	padding: 100px 20px;
+    }
+}
+
+.grid-container-fashion {
+	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	align-self: center; /* Align the image at the center */
+	justify-content: center;
+}
+
+.grid-container-film {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+.video {
+  width: 50%;
+  
+}
+
+.video img {
+	padding: 50px;
+	max-width: 100%;
+	height: auto;
+	#width: 100%; /* Ensure the images fill the available space */
+	#display: block; /* Ensure block-level element behavior */
+}
+
+.thumbnail-link {
+  display: inline-block; /* Set as inline-block to match the size of the enclosed img */
+  text-decoration: none; /* Remove the default underline decoration for the anchor tag */
+}
+
+.thumbnail-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.video p {
+	padding: 50px;
+	color: #fff;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px; /* Add space between rows */
+}
+
+.img_about {
+	max-width: 100%;
+	height: auto;
+}
+.img_film {
+	display: flex;
+    justify-content: space-between;
+}
+.img_fashion {
+	max-width: 100%;
+	height: auto;
+	width: 70%; /* Distribute the width evenly across the container */
+	object-fit: cover; /* Maintain the aspect ratio */
+	height: 100%; /* Set the height relative to the container */
+	align-self: center; /* Align the image at the center */
+}
+.img_makeup {
+  max-width: 50%;
+  height: auto;
+  width: 30%; /* Distribute the width evenly across the container */
+  object-fit: cover; /* Maintain the aspect ratio */
+  height: 100%; /* Set the height relative to the container */
+}
+
+.aboutme {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.img_about {
+  display: flex;
+  width: 30%;
+  height: auto;
+  object-fit: cover; /* Maintain the aspect ratio */
+  margin-right: 7%;
+  
+  	max-width: 100%;
+	height: 100%;
+	/*align-self: right; /* Align the image at the center */
+
+}
+
+.aboutme p {
+  display: flex;
+  padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+  line-height: 2; /* Increase the line height for more space between lines */
+  letter-spacing: 0.1em; /* Increase the letter spacing for more space between words */
+  
+}
+
+.img_music {
+  width: 60%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+    margin: 0 10vw;
+	padding: 20px;
+    background: #54536A;
+	width: 100%;
+}
+.content_makeup {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.content_social  {
+	justify-content: center;
+	align-items: center;
+}
+
+.middle-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
