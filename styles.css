@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+a { color: inherit; } 
 section
 {
     padding: 150px;
